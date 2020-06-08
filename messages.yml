@@ -1,0 +1,8 @@
+# Sent to console when you try to use a player-only command
+mustBePlayer: "&4You must be a player to use this command."
+
+# Sent to a player after they click on a player head
+teleporting: "&fYou will teleport to &c%player% &fin &c%time% &fseconds."
+
+# Sent to a player when their teleport cancels due to movement
+youMoved: "&cYou need to stay still in order to teleport!"

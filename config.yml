@@ -1,0 +1,5 @@
+# This is the title of the GUI inventory
+guiTitle: "&cClick on a friend!"
+
+# This is how long in seconds it will take to teleport
+teleportTime: 3
