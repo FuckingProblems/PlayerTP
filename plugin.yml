@@ -1,6 +1,6 @@
 name: PlayerTP
 author: _True_Religion
-version: 1.0
+version: 1.1
 main: xyz.trrlgn.teleporttoplayer.PlayerTP
 description: Simple teleport plugin to allow players to teleport to others
 api-version: 1.13

@@ -18,15 +18,20 @@ public class GUIClickListener implements Listener {
 
 	@EventHandler
 	public void onGUIClick(InventoryClickEvent e) {
-		if(!e.getClickedInventory().equals(plugin.tg.gui)) {
+		if(!e.getInventory().equals(plugin.tg.gui)) {
 			return;
 		}
 		
-		if(e.getCurrentItem().getType().equals(Material.PLAYER_HEAD)) {
-			e.setCancelled(true);
-			e.getWhoClicked().closeInventory();
-			plugin.tg.tpToPlayer((Player) e.getWhoClicked(), Bukkit.getPlayer(ChatColor.stripColor(e.getCurrentItem().getItemMeta().getDisplayName())));
+		try {
+			if(e.getCurrentItem().getType().equals(Material.PLAYER_HEAD)) {
+				e.setCancelled(true);
+				e.getWhoClicked().closeInventory();
+				plugin.tg.tpToPlayer((Player) e.getWhoClicked(), Bukkit.getPlayer(ChatColor.stripColor(e.getCurrentItem().getItemMeta().getDisplayName())));
+			}
+		} catch (Exception e2) {
+			return;
 		}
+
 	}
 
 }
