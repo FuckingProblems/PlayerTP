@@ -1,6 +1,9 @@
 # Sent to console when you try to use a player-only command
 mustBePlayer: "&4You must be a player to use this command."
 
+# Sent when the player doesn't have permission to do something
+noPermission: "&cSorry, you don't have permission for that."
+
 # Sent to a player after they click on a player head
 teleporting: "&fYou will teleport to &c%player% &fin &c%time% &fseconds."
 
